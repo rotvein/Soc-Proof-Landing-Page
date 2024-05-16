@@ -1,0 +1,40 @@
+@use 'variables';
+
+
+.container {	
+	width: 76.4%;
+	margin-inline: auto;
+	@media (max-width: 50em) {
+		width: 86.67%;
+		margin-block: 4.875rem 6rem;
+	}
+}
+
+.fs-900 {
+	font-size: variables.$fs-900;
+}
+.fs-700 {
+	font-size: variables.$fs-700;
+}
+.fs-200 {
+	font-size: variables.$fs-200;
+}
+.fs-300 {
+	font-size: variables.$fs-300;
+}
+
+.fw-400 {
+	font-weight: variables.$fw-400;
+}
+.fw-500 {
+	font-weight: variables.$fw-500;
+}
+.fw-700 {
+	font-weight: variables.$fw-700;
+}
+
+*[data-width="small"] {
+	@media (max-width: 80rem) {
+		width: 72%;
+	}	
+}
